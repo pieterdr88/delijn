@@ -40,7 +40,7 @@ platform :ios do
     )
 
     previous_build_number = latest_testflight_build_number(
-      app_identifier: "com.#{TEAMID}.loopkit.Loop",
+      app_identifier: "com.#{TEAMID}.delijn",
       api_key: api_key,
     )
 
@@ -55,17 +55,12 @@ platform :ios do
       type: "appstore",
       git_basic_authorization: Base64.strict_encode64("#{GITHUB_REPOSITORY_OWNER}:#{GH_PAT}"),
       app_identifier: [
-        "com.#{TEAMID}.loopkit.Loop", 
-        "com.#{TEAMID}.loopkit.Loop.statuswidget", 
-        "com.#{TEAMID}.loopkit.Loop.LoopWatch.watchkitextension", 
-        "com.#{TEAMID}.loopkit.Loop.LoopWatch", 
-        "com.#{TEAMID}.loopkit.Loop.Loop-Intent-Extension",
-        "com.#{TEAMID}.loopkit.Loop.LoopWidgetExtension"
+        "com.#{TEAMID}.delijn"
       ]
     )
 
     previous_build_number = latest_testflight_build_number(
-      app_identifier: "com.#{TEAMID}.loopkit.Loop",
+      app_identifier: "com.#{TEAMID}.delijn",
       api_key: api_key,
     )
 
@@ -131,7 +126,7 @@ platform :ios do
     gym(
       export_method: "app-store",
       scheme: "LoopWorkspace",
-      output_name: "Loop.ipa",
+      output_name: "Delijn.ipa",
       configuration: "Release",
       destination: 'generic/platform=iOS',
       buildlog_path: 'buildlog'
@@ -154,7 +149,7 @@ platform :ios do
     upload_to_testflight(
       api_key: api_key,
       skip_submission: false,
-      ipa: "Loop.ipa",
+      ipa: "Delijn.ipa",
       skip_waiting_for_build_processing: true,
     )
   end
@@ -223,12 +218,7 @@ platform :ios do
       force: true,
       git_basic_authorization: Base64.strict_encode64("#{GITHUB_REPOSITORY_OWNER}:#{GH_PAT}"),
       app_identifier: [
-        "com.#{TEAMID}.loopkit.Loop", 
-        "com.#{TEAMID}.loopkit.Loop.statuswidget", 
-        "com.#{TEAMID}.loopkit.Loop.LoopWatch.watchkitextension", 
-        "com.#{TEAMID}.loopkit.Loop.LoopWatch", 
-        "com.#{TEAMID}.loopkit.Loop.Loop-Intent-Extension",
-        "com.#{TEAMID}.loopkit.Loop.LoopWidgetExtension",
+        "com.#{TEAMID}.loopkit.Loop",
       ]
     )
   end
