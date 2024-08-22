@@ -47,48 +47,6 @@
                ReferencedContainer = "container:Loop/Loop.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "84752E8A26ED0FFE009FD801"
-               BuildableName = "OmniBLETests.xctest"
-               BlueprintName = "OmniBLETests"
-               ReferencedContainer = "container:OmniBLE/OmniBLE.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A91BAC2322BC691A00ABF1BB"
-               BuildableName = "NightscoutServiceKitTests.xctest"
-               BlueprintName = "NightscoutServiceKitTests"
-               ReferencedContainer = "container:NightscoutService/NightscoutService.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "431CE7761F98564200255374"
-               BuildableName = "RileyLinkBLEKitTests.xctest"
-               BlueprintName = "RileyLinkBLEKitTests"
-               ReferencedContainer = "container:RileyLinkKit/RileyLinkKit.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
