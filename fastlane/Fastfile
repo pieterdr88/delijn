@@ -41,7 +41,7 @@ platform :ios do
     )
 
     previous_build_number = latest_testflight_build_number(
-      app_identifier: "com.#{TEAMID}.loopkit.Loop",
+      app_identifier: "com.#{TEAMID}.delijn",
       api_key: api_key,
     )
 
@@ -61,7 +61,7 @@ platform :ios do
     )
 
     previous_build_number = latest_testflight_build_number(
-      app_identifier: "com.#{TEAMID}.loopkit.Loop",
+      app_identifier: "com.#{TEAMID}.delijn",
       api_key: api_key,
     )
 
@@ -78,7 +78,7 @@ platform :ios do
 
     update_code_signing_settings(
       path: "#{GITHUB_WORKSPACE}/IOS-Storyboard-Example-main/Koala-Storyboard.xcodeproj",
-      profile_name: mapping["com.#{TEAMID}.loopkit.Loop"],
+      profile_name: mapping["com.#{TEAMID}.delijn"],
       code_sign_identity: "iPhone Distribution",
       targets: ["Loop"]
     )
@@ -180,7 +180,7 @@ platform :ios do
       force: true,
       git_basic_authorization: Base64.strict_encode64("#{GITHUB_REPOSITORY_OWNER}:#{GH_PAT}"),
       app_identifier: [
-        "com.#{TEAMID}.loopkit.Loop", 
+        "com.#{TEAMID}.delijn", 
       ]
     )
   end
@@ -200,7 +200,7 @@ platform :ios do
       bundle_id = Spaceship::ConnectAPI::BundleId.find(identifier)
     end
 
-    find_bundle_id("com.#{TEAMID}.loopkit.Loop")
+    find_bundle_id("com.#{TEAMID}.delijn")
 
     match(
       type: "appstore",
