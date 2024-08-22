@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "43776F8B1B8022E90074EA36"
-               BuildableName = "Loop.app"
-               BlueprintName = "Loop"
-               ReferencedContainer = "container:Loop/Loop.xcodeproj">
+               BuildableName = "Delijn.app"
+               BlueprintName = "Delijn"
+               ReferencedContainer = "container:IOS-Storyboard-Example-main/Koala-Storyboard.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -31,9 +31,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "43776F8B1B8022E90074EA36"
-            BuildableName = "Loop.app"
-            BlueprintName = "Loop"
-            ReferencedContainer = "container:Loop/Loop.xcodeproj">
+            BuildableName = "Delijn.app"
+            BlueprintName = "Delijn"
+            ReferencedContainer = "container:IOS-Storyboard-Example-main/Koala-Storyboard.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -42,9 +42,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "43E2D90A1D20C581004DA55F"
-               BuildableName = "LoopTests.xctest"
-               BlueprintName = "LoopTests"
-               ReferencedContainer = "container:Loop/Loop.xcodeproj">
+               BuildableName = "Delijntests.xctest"
+               BlueprintName = "DelijnTests"
+               ReferencedContainer = "container:IOS-Storyboard-Example-main/Koala-Storyboard.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "43776F8B1B8022E90074EA36"
-            BuildableName = "Loop.app"
-            BlueprintName = "Loop"
-            ReferencedContainer = "container:Loop/Loop.xcodeproj">
+            BuildableName = "Delijn.app"
+            BlueprintName = "Delijn"
+            ReferencedContainer = "container:IOS-Storyboard-Example-main/Koala-Storyboard.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -81,9 +81,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "43776F8B1B8022E90074EA36"
-            BuildableName = "Loop.app"
-            BlueprintName = "Loop"
-            ReferencedContainer = "container:Loop/Loop.xcodeproj">
+            BuildableName = "Delijn.app"
+            BlueprintName = "Delijn"
+            ReferencedContainer = "container:IOS-Storyboard-Example-main/Koala-Storyboard.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
