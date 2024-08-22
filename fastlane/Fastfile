@@ -134,14 +134,6 @@ platform :ios do
       }
     end
 
-    configure_bundle_id("Loop", "com.#{TEAMID}.loopkit.Loop", [
-      Spaceship::ConnectAPI::BundleIdCapability::Type::APP_GROUPS,
-      Spaceship::ConnectAPI::BundleIdCapability::Type::HEALTHKIT,
-      Spaceship::ConnectAPI::BundleIdCapability::Type::PUSH_NOTIFICATIONS,
-      Spaceship::ConnectAPI::BundleIdCapability::Type::SIRIKIT,
-      Spaceship::ConnectAPI::BundleIdCapability::Type::USERNOTIFICATIONS_TIMESENSITIVE,
-      Spaceship::ConnectAPI::BundleIdCapability::Type::NFC_TAG_READING
-    ])
 
     
     
