@@ -19,6 +19,8 @@
 					<string>Main</string>
 					<key>ITSAppUsesNonExemptEncryption</key>
 					<false/>
+					<key>CFBundleDisplayName</key>
+					<string>delijn realtime</string>
 				</dict>
 			</array>
 		</dict>
