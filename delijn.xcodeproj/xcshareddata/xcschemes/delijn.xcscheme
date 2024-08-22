@@ -18,7 +18,7 @@
                BlueprintIdentifier = "432CF87720D8B8380066B889"
                BuildableName = "Cartfile"
                BlueprintName = "Cartfile"
-               ReferencedContainer = "container:Koala-Storyboard.xcodeproj">
+               ReferencedContainer = "container:delijn.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -32,7 +32,7 @@
                BlueprintIdentifier = "43776F8B1B8022E90074EA36"
                BuildableName = "Delijn.app"
                BlueprintName = "Delijn"
-               ReferencedContainer = "container:Koala-Storyboard.xcodeproj">
+               ReferencedContainer = "container:delijn.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,7 +49,7 @@
             BlueprintIdentifier = "43776F8B1B8022E90074EA36"
             BuildableName = "Delijn.app"
             BlueprintName = "Delijn"
-            ReferencedContainer = "container:Koala-Storyboard.xcodeproj">
+            ReferencedContainer = "container:delijn.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -72,7 +72,7 @@
             BlueprintIdentifier = "43776F8B1B8022E90074EA36"
             BuildableName = "Delijn.app"
             BlueprintName = "Delijn"
-            ReferencedContainer = "container:Koala-Storyboard.xcodeproj">
+            ReferencedContainer = "container:delijn.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -89,7 +89,7 @@
             BlueprintIdentifier = "43776F8B1B8022E90074EA36"
             BuildableName = "Delijn.app"
             BlueprintName = "Delijn"
-            ReferencedContainer = "container:Koala-Storyboard.xcodeproj">
+            ReferencedContainer = "container:delijn.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
