@@ -80,7 +80,7 @@ platform :ios do
       path: "#{GITHUB_WORKSPACE}/IOS-Storyboard-Example-main/Koala-Storyboard.xcodeproj",
       profile_name: mapping["com.#{TEAMID}.delijn"],
       code_sign_identity: "iPhone Distribution",
-      targets: ["Loop"]
+      targets: ["Koala-Storyboard"]
     )
 
    
