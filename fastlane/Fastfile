@@ -85,7 +85,7 @@ platform :ios do
 
     gym(
       export_method: "app-store",
-      scheme: "test",
+      scheme: "Delijn",
       output_name: "Delijn.ipa",
       configuration: "Release",
       destination: 'generic/platform=iOS',
