@@ -56,7 +56,7 @@ platform :ios do
       type: "appstore",
       git_basic_authorization: Base64.strict_encode64("#{GITHUB_REPOSITORY_OWNER}:#{GH_PAT}"),
       app_identifier: [
-        "com.#{TEAMID}.loopkit.Loop", 
+        "com.#{TEAMID}.delijn", 
       ]
     )
 
@@ -143,24 +143,7 @@ platform :ios do
       Spaceship::ConnectAPI::BundleIdCapability::Type::NFC_TAG_READING
     ])
 
-    configure_bundle_id("Loop Intent Extension", "com.#{TEAMID}.loopkit.Loop.Loop-Intent-Extension", [
-      Spaceship::ConnectAPI::BundleIdCapability::Type::APP_GROUPS
-    ])
-
-    configure_bundle_id("Loop Status Extension", "com.#{TEAMID}.loopkit.Loop.statuswidget", [
-      Spaceship::ConnectAPI::BundleIdCapability::Type::APP_GROUPS
-    ])
-
-    configure_bundle_id("WatchApp", "com.#{TEAMID}.loopkit.Loop.LoopWatch", [])
-
-    configure_bundle_id("WatchApp Extension", "com.#{TEAMID}.loopkit.Loop.LoopWatch.watchkitextension", [
-      Spaceship::ConnectAPI::BundleIdCapability::Type::HEALTHKIT,
-      Spaceship::ConnectAPI::BundleIdCapability::Type::SIRIKIT
-    ])
-
-    configure_bundle_id("Loop Widget Extension", "com.#{TEAMID}.loopkit.Loop.LoopWidgetExtension", [
-      Spaceship::ConnectAPI::BundleIdCapability::Type::APP_GROUPS
-    ])
+    
     
   end
 
