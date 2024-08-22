@@ -1,4 +1,3 @@
-
 # This file contains the fastlane.tools configuration
 # You can find the documentation at https://docs.fastlane.tools
 #
@@ -30,7 +29,7 @@ platform :ios do
     setup_ci if ENV['CI']
     
     update_project_team(
-      path: "#{GITHUB_WORKSPACE}/Koala-Storyboard.xcodeproj",
+      path: "#{GITHUB_WORKSPACE}/Loop/Loop.xcodeproj",
       teamid: "#{TEAMID}"
     )
 
@@ -41,14 +40,14 @@ platform :ios do
     )
 
     previous_build_number = latest_testflight_build_number(
-      app_identifier: "com.#{TEAMID}.delijn",
+      app_identifier: "com.#{TEAMID}.loopkit.Loop",
       api_key: api_key,
     )
 
     current_build_number = previous_build_number + 1
 
     increment_build_number(
-      xcodeproj: "#{GITHUB_WORKSPACE}/Koala-Storyboard.xcodeproj",
+      xcodeproj: "#{GITHUB_WORKSPACE}/Loop/Loop.xcodeproj",
       build_number: current_build_number
     )      
     
@@ -56,19 +55,24 @@ platform :ios do
       type: "appstore",
       git_basic_authorization: Base64.strict_encode64("#{GITHUB_REPOSITORY_OWNER}:#{GH_PAT}"),
       app_identifier: [
-        "com.#{TEAMID}.delijn", 
+        "com.#{TEAMID}.loopkit.Loop", 
+        "com.#{TEAMID}.loopkit.Loop.statuswidget", 
+        "com.#{TEAMID}.loopkit.Loop.LoopWatch.watchkitextension", 
+        "com.#{TEAMID}.loopkit.Loop.LoopWatch", 
+        "com.#{TEAMID}.loopkit.Loop.Loop-Intent-Extension",
+        "com.#{TEAMID}.loopkit.Loop.LoopWidgetExtension"
       ]
     )
 
     previous_build_number = latest_testflight_build_number(
-      app_identifier: "com.#{TEAMID}.delijn",
+      app_identifier: "com.#{TEAMID}.loopkit.Loop",
       api_key: api_key,
     )
 
     current_build_number = previous_build_number + 1
 
     increment_build_number(
-      xcodeproj: "#{GITHUB_WORKSPACE}/Koala-Storyboard.xcodeproj",
+      xcodeproj: "#{GITHUB_WORKSPACE}/Loop/Loop.xcodeproj",
       build_number: current_build_number
     )
     
@@ -77,18 +81,57 @@ platform :ios do
     ]
 
     update_code_signing_settings(
-      path: "#{GITHUB_WORKSPACE}/Koala-Storyboard.xcodeproj",
-      profile_name: mapping["com.#{TEAMID}.delijn"],
+      path: "#{GITHUB_WORKSPACE}/Loop/Loop.xcodeproj",
+      profile_name: mapping["com.#{TEAMID}.loopkit.Loop"],
       code_sign_identity: "iPhone Distribution",
-      targets: ["Koala-Storyboard"]
+      targets: ["Loop"]
     )
 
-   
+    update_code_signing_settings(
+      path: "#{GITHUB_WORKSPACE}/Loop/Loop.xcodeproj",
+      code_sign_identity: "iPhone Distribution",
+      targets: ["LoopCore", "LoopCore-watchOS", "LoopUI"]
+    )
+
+    update_code_signing_settings(
+      path: "#{GITHUB_WORKSPACE}/Loop/Loop.xcodeproj",
+      profile_name: mapping["com.#{TEAMID}.loopkit.Loop.statuswidget"],
+      code_sign_identity: "iPhone Distribution",
+      targets: ["Loop Status Extension"]
+    )
+    
+    update_code_signing_settings(
+      path: "#{GITHUB_WORKSPACE}/Loop/Loop.xcodeproj",
+      profile_name: mapping["com.#{TEAMID}.loopkit.Loop.LoopWatch.watchkitextension"],
+      code_sign_identity: "iPhone Distribution",
+      targets: ["WatchApp Extension"]
+    )
+    
+    update_code_signing_settings(
+      path: "#{GITHUB_WORKSPACE}/Loop/Loop.xcodeproj",
+      profile_name: mapping["com.#{TEAMID}.loopkit.Loop.LoopWatch"],
+      code_sign_identity: "iPhone Distribution",
+      targets: ["WatchApp"]
+    )
+    
+    update_code_signing_settings(
+      path: "#{GITHUB_WORKSPACE}/Loop/Loop.xcodeproj",
+      profile_name: mapping["com.#{TEAMID}.loopkit.Loop.Loop-Intent-Extension"],
+      code_sign_identity: "iPhone Distribution",
+      targets: ["Loop Intent Extension"]
+    )
+    
+    update_code_signing_settings(
+      path: "#{GITHUB_WORKSPACE}/Loop/Loop.xcodeproj",
+      profile_name: mapping["com.#{TEAMID}.loopkit.Loop.LoopWidgetExtension"],
+      code_sign_identity: "iPhone Distribution",
+      targets: ["Loop Widget Extension"]
+    )
 
     gym(
       export_method: "app-store",
-      scheme: "Delijn",
-      output_name: "Delijn.ipa",
+      scheme: "LoopWorkspace",
+      output_name: "Loop.ipa",
       configuration: "Release",
       destination: 'generic/platform=iOS',
       buildlog_path: 'buildlog'
@@ -111,7 +154,7 @@ platform :ios do
     upload_to_testflight(
       api_key: api_key,
       skip_submission: false,
-      ipa: "Delijn.ipa",
+      ipa: "Loop.ipa",
       skip_waiting_for_build_processing: true,
     )
   end
@@ -134,8 +177,33 @@ platform :ios do
       }
     end
 
+    configure_bundle_id("Loop", "com.#{TEAMID}.loopkit.Loop", [
+      Spaceship::ConnectAPI::BundleIdCapability::Type::APP_GROUPS,
+      Spaceship::ConnectAPI::BundleIdCapability::Type::HEALTHKIT,
+      Spaceship::ConnectAPI::BundleIdCapability::Type::PUSH_NOTIFICATIONS,
+      Spaceship::ConnectAPI::BundleIdCapability::Type::SIRIKIT,
+      Spaceship::ConnectAPI::BundleIdCapability::Type::USERNOTIFICATIONS_TIMESENSITIVE,
+      Spaceship::ConnectAPI::BundleIdCapability::Type::NFC_TAG_READING
+    ])
 
-    
+    configure_bundle_id("Loop Intent Extension", "com.#{TEAMID}.loopkit.Loop.Loop-Intent-Extension", [
+      Spaceship::ConnectAPI::BundleIdCapability::Type::APP_GROUPS
+    ])
+
+    configure_bundle_id("Loop Status Extension", "com.#{TEAMID}.loopkit.Loop.statuswidget", [
+      Spaceship::ConnectAPI::BundleIdCapability::Type::APP_GROUPS
+    ])
+
+    configure_bundle_id("WatchApp", "com.#{TEAMID}.loopkit.Loop.LoopWatch", [])
+
+    configure_bundle_id("WatchApp Extension", "com.#{TEAMID}.loopkit.Loop.LoopWatch.watchkitextension", [
+      Spaceship::ConnectAPI::BundleIdCapability::Type::HEALTHKIT,
+      Spaceship::ConnectAPI::BundleIdCapability::Type::SIRIKIT
+    ])
+
+    configure_bundle_id("Loop Widget Extension", "com.#{TEAMID}.loopkit.Loop.LoopWidgetExtension", [
+      Spaceship::ConnectAPI::BundleIdCapability::Type::APP_GROUPS
+    ])
     
   end
 
@@ -155,7 +223,12 @@ platform :ios do
       force: true,
       git_basic_authorization: Base64.strict_encode64("#{GITHUB_REPOSITORY_OWNER}:#{GH_PAT}"),
       app_identifier: [
-        "com.#{TEAMID}.delijn", 
+        "com.#{TEAMID}.loopkit.Loop", 
+        "com.#{TEAMID}.loopkit.Loop.statuswidget", 
+        "com.#{TEAMID}.loopkit.Loop.LoopWatch.watchkitextension", 
+        "com.#{TEAMID}.loopkit.Loop.LoopWatch", 
+        "com.#{TEAMID}.loopkit.Loop.Loop-Intent-Extension",
+        "com.#{TEAMID}.loopkit.Loop.LoopWidgetExtension",
       ]
     )
   end
@@ -175,7 +248,7 @@ platform :ios do
       bundle_id = Spaceship::ConnectAPI::BundleId.find(identifier)
     end
 
-    find_bundle_id("com.#{TEAMID}.delijn")
+    find_bundle_id("com.#{TEAMID}.loopkit.Loop")
 
     match(
       type: "appstore",
