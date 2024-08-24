@@ -13,6 +13,7 @@
 		30AA2B2427671A490069405A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30AA2B2227671A490069405A /* Main.storyboard */; };
 		30AA2B2627671A490069405A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30AA2B2527671A490069405A /* Assets.xcassets */; };
 		30AA2B2927671A490069405A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30AA2B2727671A490069405A /* LaunchScreen.storyboard */; };
+		30AA2B2127671A490069405A /* Instellingen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AA2B2027671A490069405A /* Instellingen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
