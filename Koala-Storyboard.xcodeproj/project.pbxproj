@@ -25,6 +25,7 @@
 		30AA2B2527671A490069405A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30AA2B2827671A490069405A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30AA2B2A27671A490069405A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30AA2B1E27671A490069405A /* Instellingen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instellingen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +65,7 @@
 				30AA2B2527671A490069405A /* Assets.xcassets */,
 				30AA2B2727671A490069405A /* LaunchScreen.storyboard */,
 				30AA2B2A27671A490069405A /* Info.plist */,
+				30AA2B2027671A490069405A /* Instellingen.swift */,
 			);
 			path = "Koala-Storyboard";
 			sourceTree = "<group>";
