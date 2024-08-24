@@ -147,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		30AA2B2227671A490069405A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				30AA2B2327671A490069405A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		30AA2B2727671A490069405A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
