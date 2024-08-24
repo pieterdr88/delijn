@@ -144,6 +144,7 @@
 				30AA2B2127671A490069405A /* ViewController.swift in Sources */,
 				30AA2B1D27671A490069405A /* AppDelegate.swift in Sources */,
 				30AA2B1F27671A490069405A /* SceneDelegate.swift in Sources */,
+				30AA2B1F27671A490069405A /* Instellingen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
