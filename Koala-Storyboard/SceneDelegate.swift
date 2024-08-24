@@ -1,3 +1,12 @@
+
+//
+//  SceneDelegate.swift
+//  Landmarks
+//
+//  Created by Christian Mitteldorf on 22/06/2019.
+//  Copyright © 2019 Mitteldorf. All rights reserved.
+//
+
 import UIKit
 import SwiftUI
 
