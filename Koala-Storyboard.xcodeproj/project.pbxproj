@@ -60,7 +60,6 @@
 				30AA2B1C27671A490069405A /* AppDelegate.swift */,
 				30AA2B1E27671A490069405A /* SceneDelegate.swift */,
 				30AA2B2027671A490069405A /* ViewController.swift */,
-				30AA2B2227671A490069405A /* Main.storyboard */,
 				30AA2B2527671A490069405A /* Assets.xcassets */,
 				30AA2B2727671A490069405A /* LaunchScreen.storyboard */,
 				30AA2B2A27671A490069405A /* Info.plist */,
