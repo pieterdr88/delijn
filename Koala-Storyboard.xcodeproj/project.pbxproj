@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30AA2B1F27671A490069405A /* DelijnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AA2B1E27671A490069405A /* DelijnApp.swift */; };
+		30AA2B1F27671A490069405A /* Koala-StoryboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AA2B1E27671A490069405A /* Koala-Storyboard.swift */; };
 		30AA2B2627671A490069405A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30AA2B2527671A490069405A /* Assets.xcassets */; };
 		30AA2B2127671A490069405A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AA2B2027671A490069405A /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		30AA2B1927671A490069405A /* Koala-Storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Koala-Storyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		30AA2B1E27671A490069405A /* DelijnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelijnApp.swift; sourceTree = "<group>"; };
+		30AA2B1E27671A490069405A /* Koala-Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Koala-Storyboard.swift; sourceTree = "<group>"; };
 		30AA2B2527671A490069405A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30AA2B2A27671A490069405A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30AA2B1E27671A490069405A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		30AA2B1B27671A490069405A /* Koala-Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				30AA2B1E27671A490069405A /* DelijnApp.swift */,
+				30AA2B1E27671A490069405A /* Koala-Storyboard.swift */,
 				30AA2B2527671A490069405A /* Assets.xcassets */,
 				30AA2B2A27671A490069405A /* Info.plist */,
 				30AA2B2027671A490069405A /* ContentView.swift */,
@@ -128,7 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30AA2B1F27671A490069405A /* DelijnApp.swift in Sources */,
+				30AA2B1F27671A490069405A /* Koala-Storyboard.swift in Sources */,
 				30AA2B1F27671A490069405A /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
