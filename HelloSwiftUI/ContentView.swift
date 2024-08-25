@@ -25,11 +25,6 @@ struct ContentView: View {
                 .foregroundColor(.blue)
             .padding()
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background {
-            Color.teal.opacity(0.3)
-                .ignoresSafeArea()
-        }
     }
 }
 
