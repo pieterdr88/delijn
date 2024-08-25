@@ -99,7 +99,7 @@
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					5CFF6417256FFF1000B27496 = {
-						CreatedOnToolsVersion = 12.2;
+						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
