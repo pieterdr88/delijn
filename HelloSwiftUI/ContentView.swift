@@ -16,20 +16,19 @@ struct ContentView: View {
                 .cornerRadius(50)
                 .padding(.all)
             
-            Text("First Line")
+            Text("delijn 0.001")
                 .font(.largeTitle)
                 .foregroundColor(.blue)
             
-            Text("Second Line")
+            Text("In de toekomst zal je kunnen kijken wanneer je bus er is")
                 .font(.title)
-                .foregroundColor(.red)
-            
-            HStack(alignment: .center) {
-                Text("Left Side")
-                Text("Right Side")
-            }
+                .foregroundColor(.blue)
             .padding()
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background {
+            Color.teal.opacity(0.3)
+                .ignoresSafeArea()
     }
 }
 
