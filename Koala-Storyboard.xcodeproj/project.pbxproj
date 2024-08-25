@@ -94,7 +94,7 @@
 				};
 			};
 			buildConfigurationList = 30AA2B1427671A490069405A /* Build configuration list for PBXProject "Koala-Storyboard" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 15.4";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
