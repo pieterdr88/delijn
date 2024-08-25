@@ -79,7 +79,7 @@ platform :ios do
       path: "#{GITHUB_WORKSPACE}/HelloSwiftUI.xcodeproj",
       profile_name: mapping["com.#{TEAMID}.delijn"],
       code_sign_identity: "iPhone Distribution",
-      targets: ["Koala-Storyboard"]
+      targets: ["HelloSwiftUI"]
     )
 
 
