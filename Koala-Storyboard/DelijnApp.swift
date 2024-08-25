@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct DelijnApp: App {
+struct Koala-StoryboardApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
