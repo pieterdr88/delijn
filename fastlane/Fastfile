@@ -29,7 +29,7 @@ platform :ios do
     setup_ci if ENV['CI']
     
     update_project_team(
-      path: "#{GITHUB_WORKSPACE}/Koala-Storyboard.xcodeproj",
+      path: "#{GITHUB_WORKSPACE}/HelloSwiftUI.xcodeproj",
       teamid: "#{TEAMID}"
     )
 
@@ -47,7 +47,7 @@ platform :ios do
     current_build_number = previous_build_number + 1
 
     increment_build_number(
-      xcodeproj: "#{GITHUB_WORKSPACE}/Koala-Storyboard.xcodeproj",
+      xcodeproj: "#{GITHUB_WORKSPACE}/HelloSwiftUI.xcodeproj",
       build_number: current_build_number
     )      
     
@@ -67,7 +67,7 @@ platform :ios do
     current_build_number = previous_build_number + 1
 
     increment_build_number(
-      xcodeproj: "#{GITHUB_WORKSPACE}/Koala-Storyboard.xcodeproj",
+      xcodeproj: "#{GITHUB_WORKSPACE}/HelloSwiftUI.xcodeproj",
       build_number: current_build_number
     )
     
@@ -76,7 +76,7 @@ platform :ios do
     ]
 
     update_code_signing_settings(
-      path: "#{GITHUB_WORKSPACE}/Koala-Storyboard.xcodeproj",
+      path: "#{GITHUB_WORKSPACE}/HelloSwiftUI.xcodeproj",
       profile_name: mapping["com.#{TEAMID}.delijn"],
       code_sign_identity: "iPhone Distribution",
       targets: ["Koala-Storyboard"]
