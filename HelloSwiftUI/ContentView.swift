@@ -9,9 +9,6 @@ struct ContentView: View {
             }
         
 
-            Form {
-            Text("Welkom")
-            }
             VStack {
             Image("gatlinburgtn")
                 .resizable()
@@ -37,9 +34,8 @@ struct ContentView: View {
                 .background(Color.green)
 
             }            
-        .navigationBarTitle("First View")
             
-        }
+        }.navigationBarTitle("First View")
     }
 }
 
