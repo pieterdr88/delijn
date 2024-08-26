@@ -6,10 +6,10 @@ struct ContentView: View {
         NavigationView{
             NavigationLink(destination: SecondView()) {
             Text("Go to Second View")
-        }
+            }
         
 
-        VStack {
+            VStack {
             Image("gatlinburgtn")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
