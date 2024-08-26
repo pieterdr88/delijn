@@ -43,5 +43,6 @@ struct ContentView: View {
 struct SecondView: View {
     var body: some View {
         Text("Welcome to the Second View!")
+        .navigationTitle("scherm 2")
     }
 }
