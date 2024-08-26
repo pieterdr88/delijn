@@ -4,11 +4,6 @@ struct ContentView: View {
     var body: some View {
         
         NavigationView{
-            NavigationLink(destination: SecondView()) {
-            Text("Go to Second View")
-            }
-        
-
             VStack {
             Image("gatlinburgtn")
                 .resizable()
@@ -32,6 +27,10 @@ struct ContentView: View {
             
             Text("dit is een tekst")
                 .background(Color.green)
+
+            NavigationLink(destination:SecondView(),label:{
+                Text("next screen")
+            })
 
             }
             .navigationTitle("welkom")
