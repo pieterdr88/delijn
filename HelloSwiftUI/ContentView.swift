@@ -1,18 +1,18 @@
-//
-//  ContentView.swift
-//  HelloSwiftUI
-//
-//  Created by Michael Miles on 11/26/20.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Form {
+
+        NavigationView {
+            NavigationLink(destination: SecondView()) {
+                Text("Go to Second View")
+            }
+        
+
+            Form {
             Text("Welkom")
-        }
-        VStack {
+            }
+            VStack {
             Image("gatlinburgtn")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
@@ -27,12 +27,24 @@ struct ContentView: View {
                 .font(.title)
                 .foregroundColor(.blue)
             .padding()
+
+            ForEach(1..<50) { i in
+                Text("test \(i)")
+            }
+
+            Text("dit is een tekst")
+                .background(Color.green)
+
+            }            
+        .navigationBarTitle("First View")
+            
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+
+struct SecondView: View {
+    var body: some View {
+        Text("Welcome to the Second View!")
     }
 }
