@@ -31,6 +31,7 @@ struct ContentView: View {
 
                 NavigationLink(destination:SecondView(),label:{
                     Text("Open scherm 2")
+                    .font(.largeTitle)
                 })
 
                 }
