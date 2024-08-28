@@ -29,7 +29,7 @@ struct ContentView: View {
                 .background(Color.green)
 
             NavigationLink(destination:SecondView(),label:{
-                Text("next screen")
+                Text("Open scherm 2")
             })
 
             }
@@ -42,7 +42,7 @@ struct ContentView: View {
 
 struct SecondView: View {
     var body: some View {
-        Text("Welcome to the Second View!")
+        Text("dit is scherm 2")
         .navigationTitle("scherm 2")
     }
 }
