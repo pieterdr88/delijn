@@ -24,7 +24,7 @@ struct ContentView: View {
                     ForEach(1..<50) { i in
                     Text("test \(i)")
                 } 
-                }.frame(height: 300)
+                }.frame(height: 2800)
                 
                 
                 Text("dit is een tekst")
