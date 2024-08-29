@@ -27,8 +27,8 @@ struct ContentView: View {
                 }.frame(height: 2800)
                 
                 
-                Text("dit is een tekst")
-                    .background(Color.green)
+                Text(delijn)
+                    .foregroundColor(.blue)
 
                 NavigationLink(destination:SecondView(),label:{
                     Text("Open scherm 2")
@@ -49,4 +49,16 @@ struct SecondView: View {
         Text("dit is scherm 2")
         .navigationTitle("scherm 2")
     }
+}
+
+Task {
+	var delijn = try await fetchInfo()
+}
+
+
+func fetchInfo() async throws -> String {
+	let url = URL(string: "https://www.delijn.be/api/networktrips/stops/201074/?type=MERGEFLEX")!
+	let (data, _) = try await URLSession.shared.data(from: url)
+	let response = try JSONDecoder().decode(Response.self, from: data)
+	return response.results
 }
