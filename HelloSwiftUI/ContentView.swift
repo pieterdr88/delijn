@@ -20,10 +20,11 @@ struct ContentView: View {
                     .font(.title)
                     .foregroundColor(.blue)
                 .padding()
-                
-                ForEach(1..<50) { i in
+                Form{
+                    ForEach(1..<50) { i in
                     Text("test \(i)")
                 } 
+                }.frame(height: 300)
                 
                 
                 Text("dit is een tekst")
