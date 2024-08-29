@@ -2,6 +2,8 @@
 import SwiftUI
 import Foundation
 
+var delijn = ""
+
 struct ContentView: View {
     var body: some View {
         NavigationView{
@@ -53,7 +55,7 @@ struct SecondView: View {
 }
 
 Task {
-	var delijn = try await fetchInfo()
+	delijn = try await fetchInfo()
 }
 
 
