@@ -77,7 +77,7 @@ platform :ios do
 
     update_code_signing_settings(
       path: "#{GITHUB_WORKSPACE}/HelloSwiftUI.xcodeproj",
-      profile_name: mapping["com.#{TEAMID}.delijn"],
+      profile_name: mapping["com.#{TEAMID}.testl"],
       code_sign_identity: "iPhone Distribution",
       targets: ["HelloSwiftUI"]
     )
