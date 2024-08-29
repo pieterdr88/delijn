@@ -12,7 +12,7 @@ struct ContentView: View {
                     .cornerRadius(50)
                     .padding(.all)
                 
-                Text("delijn 0.001")
+                Text("delijn 0.003")
                     .font(.largeTitle)
                     .foregroundColor(.blue)
                 
